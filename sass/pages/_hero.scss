@@ -1,0 +1,90 @@
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.btn:active {
+  scale: 1.1;
+  box-shadow: 0px 0px 5px white;
+}
+
+.tel {
+  font-size: 8vw;
+}
+
+.number__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.number__btn {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.number__btn:active {
+  scale: 1.1;
+  box-shadow: 0px 0px 5px white;
+}
+
+.model {
+  position: absolute;
+  top: 15px;
+  display: grid;
+  grid-template-columns: repeat(1, 50%);
+  justify-content: center;
+  gap: 10px;
+  width: 700px;
+  height: 150px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  display: none;
+
+  &__input {
+    padding-left: 5px;
+  }
+
+  &__add {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+
+  &__cancel {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid black;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}
+
+.show {
+  display: grid;
+}
